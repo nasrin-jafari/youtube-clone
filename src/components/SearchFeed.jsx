@@ -14,9 +14,14 @@ const SearchFeed = () => {
       setVideos(data.items)
     );
   }, [searchTerm]);
-
   return (
-    <Box p={2} minHeight="95vh">
+    <Box
+      p={2}
+      minHeight="95vh"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+    >
       <Typography
         variant="h4"
         fontWeight={900}
